@@ -325,29 +325,17 @@ h3{
     color:red;
 }
 @media screen and (max-width:992px){
-    header ul{
-        display:-webkit-box;
-        display:-ms-flexbox;
-        display:flex;
-        
-        -ms-flex-wrap: wrap;
-        
-        flex-wrap: wrap;
-        text-align: center;
-        height: 100vh;
-        vertical-align: middle;
-
-        
-    }
     header ul li{
-        width:98%;
-    }
-    header ul li:hover{
-        border:none;
+        padding:5px;
+        margin: auto;
     }
     header .active{
         border:none;
     }
+    header ul li:hover{
+        border:none;
+    }
+    
     .container{
         width:98%;
     }
@@ -411,10 +399,7 @@ h3{
     .col-sm-12{
         width: 100%;
     }
-    .practice-text,.lawyers-text{
-        float:none;
-        margin: auto;
-    }
+    
     .practice,.practice .fa-icon{
         text-align: center;
         
@@ -423,8 +408,117 @@ h3{
         margin:auto;
         width: 50%;
     }
+    .practice-text,.lawyers-text,.about-text{
+        float:none;
+        margin: auto;
+        text-align: center;
+       
+        
+    }
+    h2{
+        margin:auto;
+    }
+    .line{
+        display: none;
+    }
+    
     .photos{
         text-align: center;
     }
+    .opinion-img,.comment{
+        text-align: center;
+    }
+    .comment p{
+        width: 50%;
+        margin: 20px auto;
+    }
+    .opinion-img img{
+        width: auto;
+        height: auto;
+    }
+    
+}
+@media screen and (max-width:768px){
+    header ul{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        
+        -ms-flex-wrap: wrap;
+        
+        flex-wrap: wrap;
+        text-align: center;
+        height: 100vh;
+        vertical-align: middle;
+
+        
+    }
+    header ul li{
+        width:98%;
+    }
+    .about{
+        text-align: center;
+    }
+    .about .year-date{
+        line-height: 25px;
+    }
+    .opinion-img img{
+        width: 80%;
+        height: 80%;
+    }
+    .about .year-date{
+        line-height: 60px;
+    }
+    .col-xs-1 {
+        width: 8.333333%;
+        float: left;
+    }
+    
+    .col-xs-2 {
+        width: 16.666667%;
+        float: left;
+    }
+    
+    .col-xs-3 {
+        width: 25%;
+        float: left;
+    }
+    
+    .col-xs-4 {
+        width: 33.333333%;float: left;
+    }
+    
+    .col-xs-5 {
+        width: 41.666667%;float: left;
+    }
+    
+    .col-xs-6 {
+        width: 50%;float: left;
+    }
+    
+    .col-xs-7 {
+        width: 58.333333%;float: left;
+    }
+    
+    .col-xs-8 {
+        width: 66.666667%;float: left;
+    }
+    
+    .col-xs-9 {
+        width: 75%;float: left;
+    }
+    
+    .col-xs-10 {
+        width: 83.333333%;float: left;
+    }
+    
+    .col-xs-11 {
+        width: 91.666667%;float: left;
+    }
+    
+    
+        .col-xs-12{
+            width: 100%;
+        }
     
 }
