@@ -15,12 +15,12 @@ h3 {
 }
 
 .container {
-    width: 1177px;
+    max-width: 1177px;
     margin: 0 auto;
 }
 
 header {
-    width: 100%;
+    max-width: 100%;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -77,8 +77,8 @@ header .active {
 
 .hero {
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.7))), url("../img/hero-photo.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/hero-photo.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.7))), url("../img/hero-photo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/hero-photo.jpg");
     height: calc(100vh - 110px);
     background-position: center;
     background-repeat: no-repeat;
@@ -236,6 +236,7 @@ h3{
 .lawyers-img img{
     
     padding-left: 0;
+    -o-object-fit: cover;
     object-fit: cover; 
 }
 .opinion{
@@ -266,6 +267,7 @@ h3{
 .opinion-img img{
     width: 80%;
     height:auto;
+    -webkit-box-shadow: 17px 17px 0px -1px rgba(232,191,93,1);
     box-shadow: 17px 17px 0px -1px rgba(232,191,93,1);
 }
 .col-1 {
@@ -324,7 +326,11 @@ h3{
 }
 @media screen and (max-width:992px){
     header ul{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
+        
+        -ms-flex-wrap: wrap;
         
         flex-wrap: wrap;
         text-align: center;
@@ -334,7 +340,7 @@ h3{
         
     }
     header ul li{
-        width:100%;
+        width:98%;
     }
     header ul li:hover{
         border:none;
@@ -343,7 +349,82 @@ h3{
         border:none;
     }
     .container{
-        width:100%;
+        width:98%;
+    }
+    .hero{
+        height: 100vh;
+        
+    }
+    .about-text {
+        float:none;
+        margin: auto;
+            
+    }
+    .col-sm-1 {
+    width: 8.333333%;
+    float: left;
+}
+
+.col-sm-2 {
+    width: 16.666667%;
+    float: left;
+}
+
+.col-sm-3 {
+    width: 25%;
+    float: left;
+}
+
+.col-sm-4 {
+    width: 33.333333%;float: left;
+}
+
+.col-sm-5 {
+    width: 41.666667%;float: left;
+}
+
+.col-sm-6 {
+    width: 50%;float: left;
+}
+
+.col-sm-7 {
+    width: 58.333333%;float: left;
+}
+
+.col-sm-8 {
+    width: 66.666667%;float: left;
+}
+
+.col-sm-9 {
+    width: 75%;float: left;
+}
+
+.col-sm-10 {
+    width: 83.333333%;float: left;
+}
+
+.col-sm-11 {
+    width: 91.666667%;float: left;
+}
+
+
+    .col-sm-12{
+        width: 100%;
+    }
+    .practice-text,.lawyers-text{
+        float:none;
+        margin: auto;
+    }
+    .practice,.practice .fa-icon{
+        text-align: center;
+        
+    }
+    .practice p{
+        margin:auto;
+        width: 50%;
+    }
+    .photos{
+        text-align: center;
     }
     
 }
