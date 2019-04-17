@@ -162,7 +162,7 @@ h2{
     letter-spacing: 2px;
     margin-left: 15px;
 }
-.about-text p,.lawyers-text p{
+.about-text p,.lawyers-text p,.publication-text p{
     font-size: 21px;
     color:gray;
     margin:15px;
@@ -242,7 +242,13 @@ h3{
 .opinion{
     background-color: #111;
     color: #fff;
-    padding: 80px 0;
+    padding: 0 0 80px 0;
+}
+.publication-text{
+    padding: 50px 0;
+}
+.publication{
+    
 }
 /* grid */
 .opinion-text p{
@@ -404,17 +410,22 @@ h3{
         text-align: center;
         
     }
-    .practice p{
+    .practice p,.publication p{
         margin:auto;
         width: 50%;
     }
-    .practice-text,.lawyers-text,.about-text{
+    .practice-text,.lawyers-text,.about-text,.publication-text{
         float:none;
         margin: auto;
         text-align: center;
        
         
     }
+    .publication{
+        margin: auto;
+        text-align: center;
+    }
+    
     h2{
         margin:auto;
     }
