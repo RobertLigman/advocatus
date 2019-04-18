@@ -167,6 +167,14 @@ h2{
     color:gray;
     margin:15px;
 }
+.publication-img{
+    width: 100%;
+    
+    padding-right: 10px;
+    object-fit:cover; 
+    max-height: 230px;
+
+}
 h3{
     font-size: 21px;
     letter-spacing: 1px;
@@ -424,6 +432,10 @@ h3{
     .publication{
         margin: auto;
         text-align: center;
+        
+    }
+    .publication-img{
+        width: 70%;
     }
     
     h2{
